@@ -1,0 +1,39 @@
+
+
+2018-06-12 22:15:51.892138 server run!
+2018-06-12 22:15:59.330610 connect from:('192.168.191.137', 57000)
+2018-06-12 22:15:59.331196 error:'int' object is not subscriptable
+2018-06-12 22:16:01.366912 connect from:('192.168.191.137', 57002)
+2018-06-12 22:16:01.367432 error:'int' object is not subscriptable
+2018-06-12 22:16:25.415164 connect from:('192.168.191.137', 57004)
+register: hypo: account has existed
+2018-06-12 22:16:32.877702 connect from:('192.168.191.137', 57006)
+login: hypo: ok
+
+2018-06-12 22:17:34.991814
+server run!
+2018-06-12 22:17:39.163606 connect from:('192.168.191.137', 57008)
+2018-06-12 22:17:39.164152 error:'int' object is not subscriptable
+2018-06-12 22:17:42.115036 connect from:('192.168.191.137', 57010)
+2018-06-12 22:17:42.115507 error:'int' object is not subscriptable
+2018-06-12 22:17:43.805786 connect from:('192.168.191.137', 57012)
+2018-06-12 22:17:43.806244 error:'int' object is not subscriptable
+2018-06-12 22:17:45.170792 connect from:('192.168.191.137', 57014)
+2018-06-12 22:17:45.171243 error:'int' object is not subscriptable
+2018-06-12 22:17:46.499856 connect from:('192.168.191.137', 57016)
+2018-06-12 22:17:46.500359 error:'int' object is not subscriptable
+2018-06-12 22:17:47.728687 connect from:('192.168.191.137', 57018)
+2018-06-12 22:17:47.729210 error:'int' object is not subscriptable
+
+2018-06-12 22:19:22.886523
+server run!
+2018-06-12 22:19:32.056030 connect from:('192.168.191.137', 57022)
+error:'int' object is not subscriptable
+2018-06-12 22:19:36.025068 connect from:('192.168.191.137', 57024)
+error:'int' object is not subscriptable
+2018-06-12 22:19:52.046490 connect from:('192.168.191.137', 57028)
+register: hypoX64: ok
+2018-06-12 22:20:02.928628 connect from:('192.168.191.137', 57030)
+login: hypo: ok
+2018-06-12 22:20:23.433876 connect from:('192.168.191.137', 57032)
+data: data!

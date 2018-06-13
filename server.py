@@ -4,8 +4,8 @@ import json
 import threading
 import datetime
 
-# address='172.16.252.183'  
-address='192.168.191.137'     #监听哪些网络  127.0.0.1是监听本机 0.0.0.0是监听整个网络
+address='172.16.252.183'  
+# address='192.168.191.137'     #监听哪些网络  127.0.0.1是监听本机 0.0.0.0是监听整个网络
 port=20000           #监听自己的哪个端口
 buffsize=1024          #接收从客户端发来的数据的缓存区大小
 database = './database'

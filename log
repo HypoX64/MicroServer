@@ -37,3 +37,20 @@ register: hypoX64: ok
 login: hypo: ok
 2018-06-12 22:20:23.433876 connect from:('192.168.191.137', 57032)
 data: data!
+
+2018-06-13 19:27:37.956677
+server run!
+2018-06-13 19:28:03.268195 connect from:('192.168.191.137', 58460)
+error:LoadSenddata() takes 0 positional arguments but 1 was given
+
+2018-06-13 19:29:08.569497
+server run!
+2018-06-13 19:29:24.284856 connect from:('192.168.191.137', 58462)
+error:LoadSenddata() takes 0 positional arguments but 1 was given
+
+2018-06-13 19:30:50.067284
+server run!
+2018-06-13 19:31:04.714090 connect from:('192.168.191.137', 58496)
+data: data sent!
+2018-06-13 19:35:06.624547 connect from:('192.168.191.137', 58498)
+register: hypo: account has existed

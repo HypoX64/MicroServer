@@ -4,19 +4,25 @@ import json
 import threading
 import datetime
 
-address='172.16.252.183'  
-# address='192.168.191.137'     #监听哪些网络  127.0.0.1是监听本机 0.0.0.0是监听整个网络
+# address='172.16.252.183'  
+address='192.168.191.137'     #监听哪些网络  127.0.0.1是监听本机 0.0.0.0是监听整个网络
 port=20000           #监听自己的哪个端口
 buffsize=1024          #接收从客户端发来的数据的缓存区大小
 database = './database'
 logpath = './log'
+senddata = './senddata'
 user = {}
 
 s = socket(AF_INET, SOCK_STREAM)
 s.bind((address,port))
 s.listen(10)     #最大连接数
 
-def loaddatabase(path):
+def LoadSenddata(path):
+    line=open(path).readline()
+    line=line.strip()
+    return line
+
+def LoadDatabase(path):
     data={}
     for line in open(path):
         line=line.strip()
@@ -58,8 +64,8 @@ def loadjson(recvjsonData):
         
         #data analysis
         elif recvdata['mod']=='data':
-            replydata['reply']='data!'
-            writelog(recvdata['mod']+': '+replydata['reply'])
+            replydata['reply']=LoadSenddata(senddata)
+            writelog(recvdata['mod']+': '+'data sent!')
 
         #error
         else:
@@ -86,7 +92,7 @@ def tcplink(clientsock):
 
 def main(): 
     global user
-    user=loaddatabase(database)
+    user=LoadDatabase(database)
     writelog('\n'+str(datetime.datetime.now())+"\nserver run!")
     while True:
         try:

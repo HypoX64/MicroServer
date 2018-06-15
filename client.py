@@ -10,6 +10,8 @@ buffsize=1024        #接收数据的缓存大小
 #{"mod":"register","account":"hypo","password":"123456"}
 #登录json格式：
 #{"mod":"login","account":"hypo","password":"123456"}
+#密码更改
+#{"mod":"change","account":"hypo","oldpassword":"123456","newpassword":"000000"}
 #数据发送：
 #{"mod":"data"}
 

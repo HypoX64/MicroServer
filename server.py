@@ -61,6 +61,19 @@ def loadjson(recvjsonData):
             else:
                 replydata['reply']='account not exist'
             writelog(recvdata['mod']+': '+recvdata['account']+': '+replydata['reply'])
+
+        elif recvdata['mod']=='change':
+            if recvdata['account'] in user:
+                if user[recvdata['account']]==recvdata['oldpassword']:
+                    user[recvdata['account']]=recvdata['newpassword']
+                    f = open(database,"w+")
+                    f.write(str(json.dumps(user)))
+                    replydata['reply']='ok'
+                else:
+                    replydata['reply']='wrong password'
+            else:
+                replydata['reply']='account not exist'
+            writelog(recvdata['mod']+': '+recvdata['account']+': '+replydata['reply'])
         
         #data analysis
         elif recvdata['mod']=='data':
@@ -83,6 +96,7 @@ def loadjson(recvjsonData):
 def tcplink(clientsock):
     # while True: 
     recvdata=clientsock.recv(buffsize).decode('utf-8')
+    writelog('receiver: '+str(recvdata))
     if recvdata=='exit' or not recvdata:
         clientsock.close()
         return
